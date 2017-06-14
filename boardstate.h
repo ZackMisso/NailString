@@ -19,6 +19,11 @@ public:
     void render();
     bool addNail(float xpos, float ypos);
     bool addStringPart(int nailIndOne, int nailIndTwo, int endSide);
+    bool removeNail(int index);
+    bool removeStringPart(int index);
+    void printNails();
+    void printStringParts();
+    void clearAll();
 
     // setter methods
     void setNailWidth(float param);

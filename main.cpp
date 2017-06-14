@@ -21,37 +21,76 @@ void printHelp()
 
 void addNail(BoardState* boardState)
 {
-    // TODO
+    float xpos, ypos;
+    cin >> xpos;
+    cin >> ypos;
+    if (boardState->addNail(xpos, ypos))
+    {
+        cout << "Nail Successfully Added" << endl;
+    }
+    else
+    {
+        cout << "Failed To Add Nail" << endl;
+    }
 }
 
 void addStringPart(BoardState* boardState)
 {
-    // TODO
+    int indOne, indTwo, endSide;
+    cin >> indOne;
+    cin >> indTwo;
+    cin >> endSide;
+    if (boardState->addStringPart(indOne, indTwo, endSide))
+    {
+        cout << "String Part Successfully Added" << endl;
+    }
+    else
+    {
+        cout << "Failed To Add Nail" << endl;
+    }
 }
 
 void printNails(BoardState* boardState)
 {
-    // TODO
+    boardState->printNails();
 }
 
 void printStringParts(BoardState* boardState)
 {
-    // TODO
+    boardState->printStringParts();
 }
 
 void removeNail(BoardState* boardState)
 {
-    // TODO
+    int index;
+    cin >> index;
+    if (boardState->removeNail(index))
+    {
+        cout << "Successfully Removed Nail" << endl;
+    }
+    else
+    {
+        cout << "Failed To Remove Nail" << endl;
+    }
 }
 
 void removeStringPart(BoardState* boardState)
 {
-    // TODO
+    int index;
+    cin >> index;
+    if (boardState->removeStringPart(index))
+    {
+        cout << "Successfully Removed String Part" << endl;
+    }
+    else
+    {
+        cout << "Failed To Remove String Part" << endl;
+    }
 }
 
 void clearState(BoardState* boardState)
 {
-    // TODO
+    boardState->clearAll();
 }
 
 int main(int argc, char* argv[])

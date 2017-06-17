@@ -1,12 +1,15 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
+#include "nail.h"
+#include "stringpart.h"
 
 using namespace std;
 
 class BoardState
 {
-privatE:
+private:
     vector<Nail*> nails;
     vector<StringPart*> stringParts;
     float nailWidth;
@@ -27,5 +30,5 @@ public:
 
     // setter methods
     void setNailWidth(float param);
-    voit setStringWidth(float param);
+    void setStringWidth(float param);
 };

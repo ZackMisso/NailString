@@ -10,7 +10,7 @@ StringPart::StringPart(int sn, int en, int es) : startNail(sn), endNail(en), end
 
 int StringPart::getStartNail() { return startNail; }
 int StringPart::getEndNail() { return endNail; }
-int StringParT::getEndSide() { return endSide; }
+int StringPart::getEndSide() { return endSide; }
 
 void StringPart::setStartNail(int param) { startNail = param; }
 void StringPart::setEndNail(int param) { endNail = param; }

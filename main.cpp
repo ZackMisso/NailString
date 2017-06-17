@@ -101,23 +101,23 @@ int main(int argc, char* argv[])
     while(cmdMode)
     {
         cout << "Enter Command. 'help' for full list of commands" << endl;
-	string arg;
-	cin >> arg;
-	if (arg.equals("help")) printHelp();
-	else if (arg.equals("addn")) addNail(boardState);
-	else if (arg.equals("adds")) addStringPart(boardState);
-	else if (arg.equals("pn")) printNails(boardState);
-	else if (arg.equals("ps")) printStringParts(boardState);
-	else if (arg.equals("rn")) removeNail(boardState);
-	else if (arg.equals("rs")) removeStringPart(boardState);
-	else if (arg.equals("clear")) clearState(boardState);
-	else if (arg.equals("render")) cmdMode = false;
-	else cout << "Invalid Command." << endl;
-	cmdMode = false;
+        // string arg;
+        // cin >> arg;
+        // if (arg.equals("help")) printHelp();
+        // else if (arg.equals("addn")) addNail(boardState);
+        // else if (arg.equals("adds")) addStringPart(boardState);
+        // else if (arg.equals("pn")) printNails(boardState);
+        // else if (arg.equals("ps")) printStringParts(boardState);
+        // else if (arg.equals("rn")) removeNail(boardState);
+        // else if (arg.equals("rs")) removeStringPart(boardState);
+        // else if (arg.equals("clear")) clearState(boardState);
+        // else if (arg.equals("render")) cmdMode = false;
+        // else cout << "Invalid Command." << endl;
+        cmdMode = false;
     }
     cout << "Rendering The Board" << endl;
     boardState->render();
     cout << "Cleaning Up" << endl;
-    delete boardState();
+    delete boardState;
     cout << "Shutting Down Simulation" << endl;
 }
